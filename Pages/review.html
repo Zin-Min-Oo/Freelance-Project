@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Berimbolo Security</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+</head>
+
+<body style="background-color: #28303d;">
+    <!-- Start Header-->
+    <header style="background-color: #071952">
+        <div class="px-3 py-2 border-bottom">
+            <div class="container">
+                <div class="d-flex flex-wrap align-items-center justify-content-center
+            justify-content-lg-start">
+                    <img width="75" height="75" style="border-radius: 50px"
+                        src="https://berimbolosecurity.000webhostapp.com/wp-content/uploads/2022/05/Berimbolo-Security-logos8.jpeg"
+                        class="d-flex align-items-center my-2 my-lg-0 me-lg-auto
+              text-white text-decoration-none" />
+
+                    <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0
+              text-small">
+                        <li>
+                            <a href="main_page.html" class="nav-link text-white"> Home </a>
+                        </li>
+                        <li>
+                            <a href="products.html" class="nav-link text-white">
+                                Products
+                            </a>
+                        </li>
+                        <li>
+                            <a href="services.html" class="nav-link text-white">
+                                Services </a>
+                        </li>
+                        <li>
+                            <a href="review.html" class="nav-link text-secondary"> Review
+                                us </a>
+                        </li>
+                        <li>
+                            <a href="login.html" class="nav-link text-white">Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- End Header -->
+    <main style="color: white;">
+        <div class="container mt-5">
+            <h1>Review Us</h1>
+            <form class="row g-3 mt-3">
+                <div class="col-md-6">
+                    <label for="firstName" class="form-label">First Name</label>
+                    <input type="text" class="form-control" id="firstName" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="lastName" class="form-label">Last Name</label>
+                    <input type="text" class="form-control" id="lastName" required>
+                </div>
+                <div class="col-md-8">
+                    <label for="emailInfo" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="emailInfo" required>
+                </div>
+                <div class="col-md-4">
+                    <label for="phoneNumber" class="form-label">Phone Number</label>
+                    <input type="text" class="form-control" id="phoneNumber" placeholder="+1 (415) 867-5309">
+                </div>
+                <div class="col-md-12">
+                    <label for="comments" class="form-label">Comments, questions!</label>
+                    <textarea class="form-control" id="comments" rows="8">
+                    </textarea>
+                </div>
+                <div class="mb-2">
+                    <div class="form-group">
+                        <label for="rating" style="font-size: 30px;">Rating:</label>
+                        <form action="#">
+                            <label for="rating" class="rating">
+                                <input type="radio" name="rating" value="1" id="star1"><label for="star1"></label>
+                                <input type="radio" name="rating" value="2" id="star2"><label for="star2"></label>
+                                <input type="radio" name="rating" value="3" id="star3"><label for="star3"></label>
+                                <input type="radio" name="rating" value="4" id="star4"><label for="star4"></label>
+                                <input type="radio" name="rating" value="5" id="star5"><label for="star5"></label>
+                            </label>
+                    </div>
+
+                </div>
+                <div class="col-md-12">
+                    <a href="replying.html" class="btn btn-primary">Submit</a>
+                </div>
+            </form>
+        </div>
+    </main>
+
+
+    <!-- Start Footer -->
+    <div class="container" style="color: white;">
+        <footer class="py-5">
+            <div class="d-flex flex-column flex-sm-row
+                  justify-content-between border-top" style="padding-top:
+                  40px;">
+                <div class="col-md-5">
+                    <form>
+                        <h5>Subscribe to our newsletter</h5>
+                        <p class="py-2">Anything you want to search!
+                        </p>
+                        <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                            <label for="newsletter1" class="visually-hidden">Email address</label>
+                            <input id="newsletter1" type="text" class="form-control" placeholder="Search" />
+                            <button class="btn btn-primary" type="button">Search</button>
+                        </div>
+                    </form>
+                </div>
+
+                <ul class="list-unstyled d-flex py-4">
+                    <li class="ms-3"><a class="link-body-emphasis" href="#"><img src="../assets/instagram.png"
+                                alt="instegram" class="bi" width="100%" height="50">
+                            <use xlink:href="#twitter"></use>
+                        </a></li>
+                    <li class="ms-3"><a class="link-body-emphasis" href="#"><img src="../assets/facebook.png"
+                                alt="facebook" class="bi" width="100%" height="50">
+                            <use xlink:href="#twitter"></use>
+                        </a></li>
+                    <li class="ms-3"><a class="link-body-emphasis" href="#"><img src="../assets/twitter.png"
+                                alt="twitter" class="bi" width="100%" height="50">
+                            <use xlink:href="#twitter"></use>
+                        </a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+    <!-- End Footer -->
+
+
+</body>
+
+</html>
+<!-- 
+
+ -->
+
+
+<style>
+    .rating {
+        display: inline-flex;
+        flex-direction: row-reverse;
+        font-size: 24px;
+    }
+
+    .rating input[type="radio"] {
+        display: none;
+    }
+
+    .rating label {
+        cursor: pointer;
+        margin-left: 10px;
+    }
+
+    .rating label:before {
+        content: "\2605";
+        font-size: 32px;
+    }
+
+    .rating input[type="radio"]:checked~label:before {
+        color: #ffc107;
+    }
+</style>
